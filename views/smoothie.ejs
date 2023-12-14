@@ -1,0 +1,10 @@
+<%-  include('partials/header') -%>
+<h2>Smoothie</h2>
+<h1>welcome, <span></span></h1>
+<h3>Page protected</h3>
+<a href="/logout">logout</a>
+<script>
+    let span = document.querySelector('span')
+    span.innerHTML = localStorage.getItem('current_user')
+</script>
+<%-  include('partials/footer') -%>
